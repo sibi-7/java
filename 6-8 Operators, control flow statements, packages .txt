@@ -1,0 +1,129 @@
+Session feedback form: https://docs.google.com/forms/d/e/1FAIpQLSeTUkJ86VNzfS1NxmcVD9vawkne8wqOb77RPeekhfgRB1gfCQ/viewform?pli=1
+
+Module1- Chapter 6 - Topic: Operators and Conditional Statement
+---------------------------------------------------------------
+
+Operators:
+    What is the use of operators?
+      -- It will perform operations--> calculation or comparison
+     5+3-- > 5,3 --> operands
+              + --> operator
+    Types of Operators
+       1. Arithmetic Operators --> *, +, -, /, %
+       2. Relational Operators --> ==, !=, <, >, <=, >= -->  5<7
+       3. Logical Operators --> &&, ||, !  --> true && true  --> true
+    Conditional Statements or Decision making Statements  
+       1. If statement
+       2. If - else Statement
+       3. Nested if else
+       4. Laddar ElseIf
+       5. Switch Case
+
+Practical Usages:
+       1. Arithmetic operators -->+--> total, 
+                                   + , / average(percentage), 
+              -->  Finance * Accounting
+                    totalCost = number or quantity of the product * rate per product
+                              =noP*rPP 
+   
+              --> E-commerce platform
+                        finalPrice = orginal price - price* discount rate+ shipping rate
+                     
+              --> Measurement and Engineering calculation
+                             areaOfCircle = 3.14 *r *r 
+              --> Calendar - % -->finding the day of the given date etc   
+      2. Relational operator
+             -->   Traffic control system
+             -->   Vehicle speed control system
+             -->   User Authentication system.
+             -->   Banking transactions  etc
+
+
+     3. Logical Operators
+            --> User Authentication system
+            --> E-commerce filtering the products
+            --> Traffic control system
+        
+Day -7 -- Looping, Break and Continue statement
+-----------------------------------------------
+1.What is looping?
+     task(statement) will be executed again and again
+
+2. what is the necessity of the looping statement? or Why should we use looping statement? or what are the advantages of looping statement?
+  1. Coding time is reduced
+  2. Reduces memory
+  3. reusability of code 
+  4. readability 
+   
+2b. when should we go for looping?
+         some task(statement) is repeated many times
+
+3. Types of loop
+    1. for loop  --sum of all numbers in the list
+    2. while loop -->Simulating an ATM Withdrawal Until                         Funds are Insufficient
+    3. do---while loop -- exit control loop   --> Asking for User Input Until Correct
+4. Difference between while and do-while
+5. Break statement  --Searching for an Item in an Inventory
+6. Continue statement --Skipping Out-of-Stock Items in an Order List
+7. User Defined Functions (Return, Non-return type, Parameterize)
+
+Exercise
+--------
+1. try to create infinite loop using for, while, do--while
+
+Day-8 - Java Packages
+---------------------
+1. Understanding the concept of package
+2. Types of Packages
+3. Advantages of Package
+4. Java system packages --> lang, util, awt
+
+
+Java packages(Folders) 
+  --> collection of sub package(sub folders), classes and interfaces.
+  --> used to avoid naming problems.
+       (Two classes can have the same name, but be differentiated with a package.)
+
+Types of packages
+  1. Built-in package
+  2. User defined package
+
+Note:
+1. Default packages are assigned for enumerations, interfaces, classes and annotation types if no package statement is specified. 
+2. One source file can only have a single package statement.
+
+Advantages of Package:
+----------------------
+  1. Improved organization
+  2. Code Reusability
+  3. Preventing Conflicts
+
+System Packages
+---------------
+  1. lang
+       -->contains all the fundamental language support classes of Java.
+
+  2. util
+       -->contains Java legacy collection classes and utility classes.
+  3. awt(Abstract Windowing Toolkit)
+       -->contains button and  the graphics classes, including Graphics and Graphics 2D.
+Real-time uses of Java packages
+-------------------------------
+1. Organizing Code in Large Applications
+
+2. Reusing Libraries 
+
+3. Security and Access Control 
+
+4. Web Applications 
+
+5. Namespace Management 
+
+
+
+
+
+
+
+
+    

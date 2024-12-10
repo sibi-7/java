@@ -1,0 +1,238 @@
+Session feedback form: https://docs.google.com/forms/d/e/1FAIpQLSeTUkJ86VNzfS1NxmcVD9vawkne8wqOb77RPeekhfgRB1gfCQ/viewform?pli=1
+
+APJFSA- Core Java Notes
+Module2- chapter-1
+-------------------
+   Java History, 
+   Applications of java, 
+   Features of Java, 
+   Frameworks of Java
+   Java Architecture
+Module1- chapter-2 - understanding of JVM Architecture
+------------------
+   JVM Architecture
+    - the software-based engine necessary for running Java bytecode applications.
+    - responsible for performing bytecode analysis, understanding the code and then running it
+    - converts bytecode to machine code
+    - 3 main sections
+         1. Class Loader Subsystem
+         2. Runtime Data Area
+         3. Execution Engine
+
+   - 1.Class Loader Subsystem
+     -------------------------
+        -- responsible for loading, linking and initialising compiled .class files
+        --Loading
+            - consists of 3 different loaders
+               1. Extension class loader
+               2. Bootstrap class loader
+               3. Application class loader
+            -Delegation hierarchy Algorithm
+        --Linking
+            - performs 3 integral steps
+               1. Verification
+               2. Preparation
+               3. Resolving
+        --Initialization
+            -designates original values to all static variables.
+            -Java static block code is executed in the initialisation phase.
+     - 2. Runtime Data Area
+       ---------------------
+            * Method Area – It is a shared resource of the JVM that stores class-level data. 
+            * Heap Area - It stores all objects, along with their respective arrays and variables.
+            * Stack Area - Separate runtime stacks are created for individual threads.
+                . A Stack Frame is further dividedinto -
+                   i) Local variable array - Stores local variables and their respective values
+                   ii) Operand stack - Is a runtime for performing intermediate actions
+                   iii) Frame data - Stores method-related symbols
+            * PC Registers
+            * Native Method stacks
+     - 3. Execution Engine
+     ---------------------
+          - performs fast bytecode reading but slow execution i.e interpret byte code to machine code.
+          * JIT Compiler – The Just in Time (JIT) compiler is used in cases where the engine finds repeated code. 
+                         - compiles byte code into native code. 
+                         - The JIT has -
+				i) Intermediate Code generator - Generates intermediate code
+				ii) Code Optimiser - Optimises generated intermediate code
+				iii) Target code generator - It generates native code
+				iv) Profiler - This component detects if a method is being called multiple times.
+          * Garbage Collector: remove or delete the memory of  unused objects for a long time and create memory for new objects.
+
+ JRE
+   JRE acts as a runtime environment for JVM and consists of libraries and additional files.
+
+
+
+   Downloading and Installing of JDK
+     https://www.oracle.com/in/java/technologies/downloads/#jdk17-windows
+
+
+   Java Commands --> java -version, javac, java, javadoc, jdb, javap
+      * Javac - Javac is the commonly used Java compiler. 
+          It is responsible for compiling bytecode to be executedbytheJVM. 
+      * Java - It is a command required to launch a Java application. 
+      * Javap - Used to disassemble single or multiple class files 
+      * Javadoc - Uses Java source files to create API documentation HTML pages 
+      * Jmod - Used for creating JMOD files 
+      * Java -version - Command for checking Java version 
+
+Module1- chapter-3 -IDE
+------------------
+IDE(Integrated Development Environment)
+     - An IDE is a software application.
+
+     - provides powerful features for programmers to develop applications
+
+     - The main objective of an IDE is to raise the productivity of programmers.
+     - comprises of 
+           - a source code editor
+           - a debugger
+           - automation tool
+     - Advantages of IDE
+          - Coding become easier
+              - no need to type full variable 
+               or function name) leads to 
+              - faster and easier development.
+              - syso + Ctrl + Space: Autocompletes to System.out.println();
+              - Ctrl + Space: Content assist/autocomplete for methods, variables, and class names
+          -  Possibilities of Errors are reduced
+               check syntax error when we type.
+          -  GUI ensures better programming
+     - Two popularly used IDES
+          1. Eclipse
+          2. NetBeans
+       Both have the following features
+              * Multi-language and cross-platform support 
+              * Debugger
+              * Analytical tools 
+              * Code editor and converter
+        1. Eclipse – most widely used IDE
+             
+             * Supports many plugins and extensions 
+             * ode wriCode completion ensures lesser cting
+             * Refactoring enhances and simplifies code
+             * Syntax checking aids code corrections while writing  
+ 
+       2. NetBeans – alternatively preferred IDE by Developers
+            
+             * Simple learning curve for beginners 
+             * Large selection of inbuilt plugins 
+             * Modern and intuitive features 
+             * Easy workflow customization
+
+Module1- Chapter-4 - Familiar with java keywords and Data types
+
+    - Keywords --> Reserved wording --> having specific meaning Ex: public, private, void, class etc.. 
+    - Identifier-->name assigned to a class, method, variable, interface or package.
+        rules: 
+        It can contain alphabets, digits and only 2 special symbols _ (underscore), $(dollar). 
+        1st character should be an alphabet or _ or $. But it cannot be a digit.
+        we should not use the keywords as identifiers
+
+    - Variables  The values will be changed during  execution
+    - Literals(constants)   The value won't be changed during execution.
+      Example:
+		s=3, 
+		b=2.5, 
+		c='h'
+		name = "sam", 
+                d=true;
+		s, name, b, c--> variables
+		3, 2.5 ,'h', "sam", true-->constants
+
+        Types of Java literals include - 
+            * Integer literals --> 3
+            * Floating literals -->2.5
+            * Character literals --> 'h'
+            * String literals  -->"sam"
+            * Boolean literals -->true
+         
+    - Data Types --> represents the size and range of values that can be stored in a variable.
+          Java has two data types 
+		1.Primitive Datatypes – byte, short, int, long, float, double, char and boolean (true or false)
+		2.Non-Primitive Datatypes– Array,  String, Object, class, interface etc.
+          Difference between Primitive Vs Non-Primitive  
+
+    - Statements
+          Declaration statements Ex: int a; double b=5.5;
+          Arithmetic Statements Ex: int c = m*n;
+          Output Statement Ex: System.out.println("Welcome");
+           if age>=18    ---> Conditional Statment
+              System.out.println("Eligible to vote") 
+
+Module1- Chapter-5 - Fundamentals of Variables and type casting
+     - Variables
+             refers to a container which holds a value during java program execution.
+             In simpler terms, a variable is the name of a memory location. 
+             The value of a variable can be changed
+             Variables in java can be classified into three types
+		i) local variable --> variables declared within block or methods
+		ii) instance variable --> variable declared inside class -- will be accessed by object
+		iii) static variable --> common variable for all object is called static variable
+                          ---> declared with "static" keyword.
+             An example with all 3 variables (static, local and instance) - 
+             class B{
+			int data=60; → instance variable
+			static int m=120; → static variable
+			void display(){
+			int n=100; → local variable
+				}
+			}
+     - Type Casting
+            converting a variable  one datatype to another datatype
+   
+               Syntax - dataType variableName = (dataType) variableToConvert;
+
+            The types of casting based on directions are -
+		i) narrowing/explicit/external/non= automatic  casting - larger to smaller data type casting
+		ii) widening/implicit/internal/automatic  - smaller to larger data type casting
+
+
+       public class   TypeCasting // main class
+       {
+         public static void main(String args[])
+      	{
+     		System.out.println("welcome to java programming");
+     		int a =5;  // 4bytes
+     		double b = a;  //  8 bytes Widening or implicit or internal or automatic casting  -- int --> double
+     		System.out.println(a);//
+     		System.out.println(b);
+      
+    		double pi=3.14; // 8 bytes
+    		int c = (int)pi;  // 4bytes Narrowing or explicit or external  double --> int
+
+    		System.out.println(pi);
+     		System.out.println(c);
+   		}   
+	}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    
+   
+   
